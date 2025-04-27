@@ -1,0 +1,161 @@
+<!--
+********************************************************************************************************
+
+Authors:		(c) 2023 Maths Town
+
+Licence:		The MIT License
+
+*********************************************************************************************************
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*********************************************************************************************************
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="preload" href="./main-cpp.js"  as="script">
+    <link rel="preload" href="./main-cpp.wasm" as="fetch" type="application/wasm" crossorigin>
+    <link rel="prefetch" href="./main-background-cpp.js">     
+    <link rel="prefetch" href="./main-background-cpp.wasm" as="fetch" type="application/wasm" crossorigin>
+    <link rel="prefetch" href="./main-render-worker-cpp.js">     
+    <link rel="prefetch" href="./main-render-worker-cpp.wasm" as="fetch" type="application/wasm" crossorigin>
+    <meta charset="utf-8">
+    <title>Effects Town</title>
+    <style>
+        html, body, canvas{
+            background-color:rgb(255, 255, 255);
+            margin:0;
+            padding: 0;
+            overflow:hidden;
+            color: black;
+            
+            width:100%;
+            height:100%;
+        }
+        #canvasholder{
+          top:0px;
+          left:0px;
+          width: calc(100% - 25em);
+          height:100%;
+          z-index: 1;
+        }
+        #parameters{
+          position:absolute;
+          top:0px;
+          left:calc(100% - 25em);
+          width:calc(25em - 10px);
+          height:100%;
+          margin:0px;
+          float:right;
+          background-color:rgb(255, 255, 255);
+          padding:5px;
+        }
+        .menugroup{
+            margin:auto;
+            border-radius: 25px;
+            border: 2px solid #777777;
+            padding:0.5em;
+            text-align:center;           
+            
+          }
+        /*Buttons*/
+        .button{
+          display:inline-block;
+          z-index: 5;
+          margin: auto;
+          background:white;
+          border-radius: 10px;
+          border: 2px solid #777777;
+          padding:0.5em;
+          font-size:1.2em;
+          cursor: pointer;  
+          text-decoration:none;
+          color:black;  
+          margin-bottom:0.5em;  
+          margin-right:0.5em;  
+          min-width:10em;   
+          text-align:center;
+          background-image: linear-gradient(#ffffff 45%,#eeeeee 100%, #ffffff);   
+        }
+        .button:hover{
+          background-image: linear-gradient(#f9ecdb 45%,#f9cc8b 100%, #f9dcbb);
+        }        
+        .buttonsmaller{
+          display:inline-block;
+          z-index: 5;
+          background:white;
+          border-radius: 10px;
+          border: 2px solid #777777;
+          padding:0.2em;
+          font-size:1.0em;
+          cursor: pointer;  
+          text-decoration:none;
+          color:black;  
+          margin-bottom:0.5em;  
+          margin-right:0.1em;  
+          margin-left:0px;
+          min-width:10em;   
+          text-align:center;
+          background-image: linear-gradient(#ffffff 45%,#eeeeee 100%, #ffffff);   
+        }
+        .buttonsmaller:hover{
+          background-image: linear-gradient(#f9ecdb 45%,#f9cc8b 100%, #f9dcbb);
+        }
+        [type="radio"]{
+            appearance: none;
+            display:none;
+          }
+
+          .radiolist label{
+            border: 1px solid #777777;
+            background-image: linear-gradient(#ffffff 45%,#eeeeee 75%, #ffffff);
+            padding:0.1em;
+            text-align:center;
+            display: inline-block;
+            min-width: 2.2em;
+            margin:0px;
+            cursor: pointer;
+          }
+          .radiolist :checked+label{
+            background-image: linear-gradient(#ccccff 45%,#aaaaff 75%, #ccccff);
+          }
+          .radiolist label:first-of-type{
+            border-radius: 0.5em 0 0 0.5em;
+          }
+          .radiolist label:last-of-type{
+            border-radius: 0 0.5em 0.5em 0;
+          }
+    </style>      
+  </head>
+  <body>    
+    <div id="canvasholder">
+      <canvas id="canvas"></canvas> 
+    </div>
+    
+    
+    <div id="parameters">
+      <!--<a class="buttonsmaller" id="aspect-auto">Auto</a>-->
+      <div class="menugroup">
+        Aspect Ratio<br>
+        <div class="radiolist"><input id="i1" name="iterations" type="radio" checked/><label for="i1">Auto 
+          </label><input id="i2" name="iterations" type="radio" /><label for="i2">1:1
+          </label><input id="i3" name="iterations" type="radio" /><label for="i3">16:9 
+          </label>
+        </div>
+      </div>
+    </div>   
+  </body>
+  <script src=main-cpp.js></script>
+</html>  

@@ -1,0 +1,4 @@
+^C:\ADAM\EFFECTSTOWN\SRC\3RD-PARTY\AFTEREFFECTSSDK\EXAMPLES\TEMPLATE\SKELETON\SKELETONPIPL.R
+cl /I "C:\Adam\EffectsTown\src\3rd-party\AfterEffectsSDK\Examples\Template\Skeleton\Win\..\..\..\Headers" /EP ".."\\"SkeletonPiPL.r" > "x64\Debug\"\\"SkeletonPiPL.rr"
+"C:\Adam\EffectsTown\src\3rd-party\AfterEffectsSDK\Examples\Template\Skeleton\Win\..\..\..\Resources\PiPLTool" "x64\Debug\SkeletonPiPL.rr" "x64\Debug\SkeletonPiPL.rrc"
+cl /D "MSWindows" /EP x64\Debug\SkeletonPiPL.rrc >               "C:\Adam\EffectsTown\src\3rd-party\AfterEffectsSDK\Examples\Template\Skeleton\Win\"\\"SkeletonPiPL".rc

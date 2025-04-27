@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{f3974f29-f17b-48f6-bc82-58785d5bb339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{8c6419a0-9dc4-498a-81f2-161e5d9a47f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host-openfx">
+      <UniqueIdentifier>{74f46bb4-826a-4173-a673-86176ef5e7c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\colour.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\linear-algebra.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\noise.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\projects\watercolour-texture\renderer.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\projects\watercolour-texture\parameters.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\projects\watercolour-texture\config.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\util.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\parameter-list.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\projects\watercolour-texture\parameter-id.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hosts\openfx\openfx-helper.h">
+      <Filter>Source Files\host-openfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hosts\openfx\openfx-render.h">
+      <Filter>Source Files\host-openfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hosts\openfx\openfx-parameter-helper.h">
+      <Filter>Source Files\host-openfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hosts\openfx\openfx-instance-data.h">
+      <Filter>Source Files\host-openfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\simd-cpuid.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\simd-f32.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\simd-f64.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\simd-uint32.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\simd-uint64.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\simd-concepts.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\input-transforms.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\util.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\projects\watercolour-texture\parameters.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hosts\openfx\openfx-main.cpp">
+      <Filter>Source Files\host-openfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hosts\openfx\openfx-render.cpp">
+      <Filter>Source Files\host-openfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hosts\openfx\openfx-parameter-helper.cpp">
+      <Filter>Source Files\host-openfx</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
