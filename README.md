@@ -14,6 +14,6 @@ Code in the 3rd-party folder is subject to its own license.
 
 
 
-# Compiling Information
+## Compiling Information
 Compile the Windows Versions with Visual Studio 2022.  
 Web hosts compile with emscripten.
