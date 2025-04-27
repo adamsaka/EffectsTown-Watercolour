@@ -15,10 +15,11 @@ Code in the 3rd-party folder is subject to its own license.
 
 ## Compiling Information
 Windows:
-
-Compile the Windows Versions with Visual Studio 2022.  
-
+- Create a project folder (Build resources will end up here.)
+- Create a folfer src and download this repository.
+- Compile the Windows Versions with Visual Studio 2022.  
+- Actual outputs go directly to the relevent host folder.  (After Effects common)
 
 Web Hosts:
 
-These host are currently not operational.  They are designed to compile with emscripten.
+- These host are currently not operational.  They are designed to compile with emscripten.
