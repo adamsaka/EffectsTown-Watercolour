@@ -25,23 +25,11 @@
     <ClInclude Include="..\..\common\noise.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\renderer.h">
-      <Filter>Source Files\Project</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\parameters.h">
-      <Filter>Source Files\Project</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\config.h">
-      <Filter>Source Files\Project</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\common\util.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\parameter-list.h">
       <Filter>Source Files\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\parameter-id.h">
-      <Filter>Source Files\Project</Filter>
     </ClInclude>
     <ClInclude Include="..\..\hosts\openfx\openfx-helper.h">
       <Filter>Source Files\host-openfx</Filter>
@@ -76,13 +64,22 @@
     <ClInclude Include="..\..\common\input-transforms.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\config.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\parameter-id.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\parameters.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\renderer.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\common\util.cpp">
       <Filter>Source Files\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\projects\watercolour-texture\parameters.cpp">
-      <Filter>Source Files\Project</Filter>
     </ClCompile>
     <ClCompile Include="..\..\hosts\openfx\openfx-main.cpp">
       <Filter>Source Files\host-openfx</Filter>
@@ -92,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="..\..\hosts\openfx\openfx-parameter-helper.cpp">
       <Filter>Source Files\host-openfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\watercolour-texture\parameters.cpp">
+      <Filter>Source Files\Project</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

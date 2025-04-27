@@ -31,17 +31,8 @@
     <ClInclude Include="..\..\common\noise.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\renderer.h">
-      <Filter>Source Files\Project</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\hosts\after-effects\after-effects-sdk.h">
       <Filter>Source Files\host-after-effects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\parameters.h">
-      <Filter>Source Files\Project</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\config.h">
-      <Filter>Source Files\Project</Filter>
     </ClInclude>
     <ClInclude Include="..\..\hosts\after-effects\after-effects-parameter-helper.h">
       <Filter>Source Files\host-after-effects</Filter>
@@ -54,9 +45,6 @@
     </ClInclude>
     <ClInclude Include="..\..\common\parameter-list.h">
       <Filter>Source Files\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\projects\watercolour-texture\parameter-id.h">
-      <Filter>Source Files\Project</Filter>
     </ClInclude>
     <ClInclude Include="..\..\common\simd-cpuid.h">
       <Filter>Source Files\Common</Filter>
@@ -79,6 +67,18 @@
     <ClInclude Include="..\..\common\environment.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\renderer.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\config.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\parameter-id.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\watercolour-texture\parameters.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\hosts\after-effects\after-effects-main.cpp">
@@ -99,11 +99,11 @@
     <ClCompile Include="..\..\common\util.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\projects\watercolour-texture\parameters.cpp">
-      <Filter>Source Files\Project</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\common\input-transforms.h">
       <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\watercolour-texture\parameters.cpp">
+      <Filter>Source Files\Project</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

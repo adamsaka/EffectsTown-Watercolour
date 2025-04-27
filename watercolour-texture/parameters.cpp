@@ -19,18 +19,38 @@ LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE A
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
 ********************************************************************************************************
 
 Description:
 
-	For the actual list of project parameters.
+	This is the list of parameters that will actually be displayed to the user.  
+	This function and list is host-independant.
 
+	
+	Each entry must have a unique parameter-id
 
+	After Effects requires that ID remain the same accross different versions.
+	So, do not remove ununsed parameter-ids, just add new ones.
+
+	Add ParameterIF::seed if you'd like to expose the random seed selection to user.
 
 *******************************************************************************************************/
-#pragma once
 
-#include "..\..\common\parameter-list.h"
+#include "parameters.h"
+#include "parameter-id.h" 
+#include "..\common\input-transforms.h"
 
-ParameterList build_project_parameters();
+ParameterList build_project_parameters() {
+	ParameterList params;
+	params.add_entry(ParameterEntry::make_seed(ParameterID::seed, "Random Seed"));
+	params.add_entry(ParameterEntry::make_number(ParameterID::scale, "Scale Noise",0.0000001,10000.0,1.0,0.000001,100.0,2));
+	params.add_entry(ParameterEntry::make_number(ParameterID::directional_bias, "Directional Bias", -10000, 10000.0, 0.0, -100.0, 100.0, 2));
+
+	params.add_entry(ParameterEntry::make_number(ParameterID::evolve1, "Evolve (Linear/Speed)", -10000.0, 10000.0, 1.0, 0, 100.0, 2));
+	params.add_entry(ParameterEntry::make_number(ParameterID::evolve2, "Evolve (Loop)", -10000.0, 10000.0, 0.0, 0, 1, 4));
+
+	//Input Transforms (builds from common set used in multiple projects)
+	build_input_transforms_parameter_list(params);
+
+	return params;
+}

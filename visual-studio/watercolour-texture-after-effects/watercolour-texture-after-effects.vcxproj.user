@@ -34,4 +34,7 @@
     <LocalDebuggerCommand>C:\Program Files\Adobe\Adobe After Effects 2023\Support Files\AfterFX.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
 </Project>

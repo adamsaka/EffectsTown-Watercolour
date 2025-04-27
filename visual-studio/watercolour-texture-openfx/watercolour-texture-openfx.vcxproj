@@ -203,7 +203,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
-      <AdditionalIncludeDirectories>../../projects/watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -241,7 +241,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
-      <AdditionalIncludeDirectories>../../projects/watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>false</TreatWarningAsError>
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -266,7 +266,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
-      <AdditionalIncludeDirectories>../../projects/watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>false</TreatWarningAsError>
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
@@ -291,7 +291,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
-      <AdditionalIncludeDirectories>../../projects/watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../watercolour-texture/;..\..\3rd-party\OpenFX\OpenFX-1.4\include</AdditionalIncludeDirectories>
       <TreatWarningAsError>false</TreatWarningAsError>
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions512</EnableEnhancedInstructionSet>
@@ -398,17 +398,17 @@
     <ClInclude Include="..\..\hosts\openfx\openfx-instance-data.h" />
     <ClInclude Include="..\..\hosts\openfx\openfx-render.h" />
     <ClInclude Include="..\..\hosts\openfx\openfx-parameter-helper.h" />
-    <ClInclude Include="..\..\projects\watercolour-texture\config.h" />
-    <ClInclude Include="..\..\projects\watercolour-texture\parameters.h" />
-    <ClInclude Include="..\..\projects\watercolour-texture\parameter-id.h" />
-    <ClInclude Include="..\..\projects\watercolour-texture\renderer.h" />
+    <ClInclude Include="..\..\watercolour-texture\config.h" />
+    <ClInclude Include="..\..\watercolour-texture\parameter-id.h" />
+    <ClInclude Include="..\..\watercolour-texture\parameters.h" />
+    <ClInclude Include="..\..\watercolour-texture\renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\common\util.cpp" />
     <ClCompile Include="..\..\hosts\openfx\openfx-main.cpp" />
     <ClCompile Include="..\..\hosts\openfx\openfx-parameter-helper.cpp" />
     <ClCompile Include="..\..\hosts\openfx\openfx-render.cpp" />
-    <ClCompile Include="..\..\projects\watercolour-texture\parameters.cpp" />
+    <ClCompile Include="..\..\watercolour-texture\parameters.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
